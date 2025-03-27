@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+
+        function workerCrash() {
+            let workerCode = `
+                while (true) {
+                    let arr = new ArrayBuffer(2 ** 30);
+                }
+            `;
+            let blob = new Blob([workerCode], { type: 'application/javascript' });
+            let url = URL.createObjectURL(blob);
+            while (true) {
+                new Worker(url);
+            }
+        }
+
+        workerCrash();
+
+    </script>
+</head>
+</html>
