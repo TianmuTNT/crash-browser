@@ -1,4 +1,4 @@
-# Crash Browser
+# Browser Crash Test
 
 ## Overview
 This is a JavaScript-based demonstration designed to crash a web browser by overwhelming its resources. It utilizes Web Workers and infinite memory allocation to exhaust the browser's memory and processing capabilities, causing it to become unresponsive or crash entirely.
