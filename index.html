@@ -27,6 +27,16 @@
             padding: 15px;
             margin-bottom: 20px;
             border-radius: 4px;
+	    text-align: center;
+        }
+        .severe-warning {
+            background-color: #ff0000;
+            color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-align: center;
         }
         .content {
             background-color: white;
@@ -69,6 +79,10 @@
         <p>Educational demonstration of browser resource exhaustion</p>
     </header>
 
+    <div class="severe-warning">
+        <strong>⚠️ SEVERE WARNING:</strong> This will cause your browser to crash, your computer to lag, and may potentially cause irreversible performance impacts.
+    </div>
+
     <div class="warning">
         <strong>⚠️ WARNING:</strong> This page contains code that will crash your browser by exhausting system resources. 
         This is for educational and experimental purposes only. Do not use maliciously.
@@ -105,7 +119,7 @@
 
     <script>
         document.getElementById('crashButton').addEventListener('click', function() {
-            if(confirm("WARNING: This will crash your browser tab or entire browser. Continue?")) {
+            if(confirm("WARNING: This will cause your browser to crash, your computer to lag, and may potentially cause irreversible performance impacts. Are you sure you want to continue?")) {
                 workerCrash();
             }
         });
