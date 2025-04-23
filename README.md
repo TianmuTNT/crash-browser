@@ -14,7 +14,7 @@ The script creates Web Workers that continuously allocate large memory buffers. 
 
 ## Usage
 1. Clone or download this repository from GitHub.
-2. Open the index.html file in a web browser.
+2. Open the crash-browser.html file in a web browser.
 3. Read the warnings carefully.
 4. Click the "Run Crash Test" button if you wish to proceed.
 5. Confirm your intention when prompted with the warning dialog.
